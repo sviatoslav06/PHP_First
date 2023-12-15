@@ -50,8 +50,14 @@
                         <td><?php echo $row["name"] ?></td>
                         <td><?php echo $row["description"] ?></td>
                         <td>
-                            <a href="#" class="btn btn-info">Змінити</a>
-                            <a href="#" class="btn btn-danger">Видалити</a>
+                            <a href="change.php?category_id=<?php echo $row["id"]; ?>" class="btn btn-info">Змінити</a>
+                            <form action="delete.php" method="post">
+                                <input type="hidden" name="category_id" value="<?php echo $row["id"]; ?>">
+                                <button type="submit" class="btn btn-danger"
+                                        onclick="return confirm('Are you sure you want to delete this category?')">
+                                    Видалити
+                                </button>
+                            </form>
                         </td>
                     </tr>
 
