@@ -1,0 +1,50 @@
+# Ignore vendor directory
+/vendor/
+
+# Ignore composer dependencies
+/composer.phar
+/composer.lock
+
+# Ignore user-specific files
+/.php_cs
+/.php_cs.cache
+/.phpunit.result.cache
+/phpunit.xml
+/phpunit.xml.dist
+
+# Ignore logs and temporary files
+/log/
+/tmp/
+/temp/
+/*.log
+/*.swp
+/*.swo
+
+# Ignore environment-specific files
+/.env
+/.env.local
+/.env.*.php
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files and directories
+.idea/
+.vscode/
+
+# Ignore Composer generated autoload files
+/vendor/autoload.php
+/vendor/autoload.php
+/vendor/composer
+
+# Ignore Node.js dependencies
+/node_modules/
+
+# Ignore PHPStorm project files
+/*.iml
+
+# Ignore PHPUnit generated files
+/phpunit.xml
+/phpunit.xml.dist
+/phpunit.result.cache
